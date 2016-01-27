@@ -1,4 +1,4 @@
-react-json-editor
-=================
+react-json-editor-example
+=========================
 
-A generic JSON editor, specifically designed for attaching to React state values.
+> Demo app for react-json-editor
