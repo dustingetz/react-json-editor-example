@@ -1,0 +1,17 @@
+machine:
+  python:
+    version: 2.7.3
+  node:
+    version: 0.12.0
+
+
+dependencies:
+  pre:
+    - pip install awsebcli
+    - git submodule update --init --recursive
+  override:
+    - npm install
+    - pushd && cd vendor/react-json-editor && npm install && popd
+  post:
+    - pushd && cd vendor/react-json-editor && webpack && popd
+    - webpack
