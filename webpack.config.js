@@ -18,7 +18,7 @@ module.exports = {
     ],
     modulesDirectories: ['node_modules'],
     alias: {
-      'react-json-editor': path.join(__dirname, '../../src/react-json-editor')
+      'react-json-editor': path.join(__dirname, 'vendor/react-json-editor')
     }
   },
 
@@ -28,7 +28,7 @@ module.exports = {
 
   module: {
     loaders: [
-      {test: /\.js$/, loaders: ['babel'], include: [path.resolve('./src'), path.join(__dirname, '../../src')]},
+      {test: /\.js$/, loaders: ['babel'], include: [path.resolve('./src'), path.join(__dirname, 'vendor/react-json-editor/src')]},
       {test: /\.css$/, loader: 'style!css'}
     ]
   }

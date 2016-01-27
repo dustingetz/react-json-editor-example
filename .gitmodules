@@ -1,0 +1,3 @@
+[submodule "vendor/react-json-editor"]
+	path = vendor/react-json-editor
+	url = git@github.com:prognostic-llc/react-json-editor.git
