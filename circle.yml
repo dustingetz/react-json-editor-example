@@ -11,7 +11,7 @@ dependencies:
     - git submodule update --init --recursive
   override:
     - npm install
-    - pushd vendor/react-json-editor && npm install && popd
+    - cd vendor/react-json-editor && npm install
   post:
-    - pushd vendor/react-json-editor && webpack && popd
+    - cd vendor/react-json-editor && node_modules/.bin/webpack
     - webpack
