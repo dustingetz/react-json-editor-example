@@ -14,4 +14,4 @@ dependencies:
     - cd vendor/react-json-editor && npm install
   post:
     - cd vendor/react-json-editor && node_modules/.bin/webpack
-    - webpack
+    - node_modules/.bin/webpack
