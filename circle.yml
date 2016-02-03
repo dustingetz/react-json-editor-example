@@ -15,3 +15,12 @@ dependencies:
   post:
     - cd vendor/react-json-editor && node_modules/.bin/webpack
     - node_modules/.bin/webpack
+
+
+deployment:
+  dev:
+    branch: master
+    commands:
+      - cp static/bundle.js .deploy/app/
+      - cd .deploy && eb init -r us-east-1 react-json-editor-example
+      - cd .deploy && eb deploy -l $CIRCLE_SHA1
