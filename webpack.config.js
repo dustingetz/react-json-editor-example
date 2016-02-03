@@ -18,7 +18,7 @@ module.exports = {
     ],
     modulesDirectories: ['node_modules'],
     alias: {
-      'react-json-editor': path.join(__dirname, 'vendor/react-json-editor')
+      'react-json-editor': path.join(__dirname, 'vendor/react-json-editor/src/react-json-editor') // for source maps in the lib
     }
   },
 
