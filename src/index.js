@@ -42,7 +42,7 @@ class App extends React.Component {
           </div>
           <div>
             Second editor, because we can
-            <JsonEditor targetCursor={rootCursor} />
+            <JsonEditor targetCursor={rootCursor} initialExpandedLevels={2}/>
           </div>
         </div>
     );
