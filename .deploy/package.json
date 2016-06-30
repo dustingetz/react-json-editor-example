@@ -1,8 +1,0 @@
-{
-  "name": "react-json-editor-example-beanstalk",
-  "version": "0.0.1",
-  "dependencies": {
-    "finalhandler": "^0.4.1",
-    "serve-static": "^1.10.2"
-  }
-}
